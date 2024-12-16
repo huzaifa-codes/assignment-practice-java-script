@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Instructions</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .instructions-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .instructions {
+            flex: 2;
+           
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid instructions-container">
+        <!-- Left Image -->
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1NacSBCRuipsSHSGXRURcAzSy0HqOdEMeQ&s" alt="Left Image" width="699">
+        </div>
+
+        <!-- Instructions Content -->
+        <div class="instructions">
+            <h2>How to Play Snake-Water-Gun?</h2>
+            <p><span>Choices:</span> Each player picks one option from Snake, Water, or Gun.</p>
+            <p><span>Winning Rules:</span>
+                <br>Snake drinks Water → Snake wins.
+                <br>Water destroys Gun → Water wins.
+                <br>Gun kills Snake → Gun wins.
+            </p>
+            <p><span>Draw Condition:</span> If both players choose the same option, it’s a draw.</p>
+            <p><span>Gameplay:</span> Both players reveal their choices, and the winner is decided based on the rules.</p>
+            <button id="btn" class="btn btn-lg" onclick="btn()">Start Now</button>
+        </div>
+
+        <!-- Right Image -->
+        <div class="image-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ESRQSv8VfTjNLwnvxS-DLSZxWYJeZ7GGcQ&s" alt="Right Image">
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

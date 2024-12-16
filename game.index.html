@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake / Water / Gun</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(14, 8, 8);
+        }
+        .header {
+            color: #fff;
+            font-size: 50px;
+            margin: 39px;
+        }
+        .game-button {
+            padding: 10px 15px; /* Adjusted padding for smaller buttons */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 24px; 
+            transition: background-color 0.3s;
+            width: 60%;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around; 
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid text-center">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1NacSBCRuipsSHSGXRURcAzSy0HqOdEMeQ&s" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-4" style="display: flex;">
+                <h1 class="header" style="color: #a11010; font-size: 40px;;">START NOW!</h1>
+            </div>
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6ESRQSv8VfTjNLwnvxS-DLSZxWYJeZ7GGcQ&s" alt="" class="img-fluid">
+            </div>
+        </div>
+
+     
+        <div class="row">
+            <div class="col">
+                <div class="con" style="color: #fafafc; font-size: 40px;"></div>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHvl6Q8jAHlHmT_UADnMdjAP3YBxJDypcT4w&s" alt="" class="img-fluid border border-primary rounded" style="box-shadow: 0 4px 8px rgba(231, 26, 26, 0.2);">
+                <div class="button-container">
+                    <button onclick="check('gun')" class="game-button" style="background-color: #0905f5;">Gun</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9TUNYAj29Qf8PTl8ISUE4mClSrM9qQRZ4w&s" alt="" class="img-fluid border border-primary rounded" style="box-shadow: 0 4px 8px rgba(195, 238, 4, 0.2);">
+                <div class="button-container">
+                    <button onclick="check('snake')" class="game-button" style="background-color: #9e0909;">Snake</button>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiyUiFV7rHPjqOVR2pZGYCJPFGO99pfIwTBA&s" alt="" class="img-fluid border border-primary rounded" style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                <div class="button-container">
+                    <button onclick="check('water')" class="game-button" style="background-color: #2906f0;">Water</button>
+                </div>
+            </div>
+        </div>
+        <script src="game.js"> </script>
+    </body>
+    

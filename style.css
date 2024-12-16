@@ -1,0 +1,50 @@
+    body{
+        background-color: rgb(2, 22, 43);
+    }
+
+    .container-fluid{
+        border: 60px solid rgb(0, 0, 0);
+        
+    }
+
+    .instructions {
+       
+        border-radius: 15px; 
+    }
+    
+    h2 {
+        color: #480bd8;
+        margin-bottom: 20px; 
+    }
+    
+    p {
+        font-size: 1.25rem; 
+    }
+    
+    .instructions p span {
+        font-weight: bold;
+        color: #6200ff;
+    }
+    
+    #btn {
+        margin-top: 20px; 
+        padding: 10px 20px; 
+        font-size: 1.5rem; 
+    }
+    
+    #btn:hover {
+        background-color: #ff6600; 
+        transform: scale(1.1);
+    }
+
+
+
+    #h-1{
+        background-color: brown;
+        
+    }
+
+    #btn{
+        background-color: #480bd8;
+        color: black;
+    }
